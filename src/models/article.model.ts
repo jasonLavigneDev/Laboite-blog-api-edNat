@@ -69,6 +69,12 @@ export class Article extends Entity {
   })
   visits?: number;
 
+  @property({
+    type: 'array',
+    itemType: 'string',
+  })
+  tags?: string[];
+
 
   constructor(data?: Partial<Article>) {
     super(data);
