@@ -3,7 +3,7 @@ import {Article} from './article.model';
 
 @model({
   settings: {
-    strict: false,
+    strict: true,
     mongodb: {collection: 'users'}, // custom names
   },
 })
