@@ -41,6 +41,7 @@ export class Article extends Entity {
 
   @property({
     type: 'string',
+    required: true,
   })
   structure: string;
 
