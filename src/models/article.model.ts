@@ -1,4 +1,5 @@
-import {Entity, model, property} from '@loopback/repository';
+import {Entity, model, property, belongsTo} from '@loopback/repository';
+import {Users} from './users.model';
 
 @model({
   settings: {
@@ -20,13 +21,6 @@ export class Article extends Entity {
     required: true,
   })
   slug?: string;
-
-  @property({
-    type: 'string',
-    required: true,
-  })
-  userId: string;
-
   @property({
     type: 'string',
     required: true,
@@ -75,6 +69,8 @@ export class Article extends Entity {
   })
   tags?: string[];
 
+  @belongsTo(() => Users)
+  userId: string;
 
   constructor(data?: Partial<Article>) {
     super(data);

@@ -1,13 +1,22 @@
 import {
+  Count,
+  CountSchema,
   Filter,
   repository,
+  Where,
 } from '@loopback/repository';
 import {
+  del,
   get,
   getModelSchemaRef,
+  getWhereSchemaFor,
   param,
+  patch,
+  post,
+  requestBody,
 } from '@loopback/rest';
 import {
+  Users,
   Article,
 } from '../models';
 import {UsersRepository} from '../repositories';
@@ -17,7 +26,7 @@ export class UsersArticleController {
     @repository(UsersRepository) protected usersRepository: UsersRepository,
   ) { }
 
-  @get('/authors/{id}/articles', {
+  @get('/users/{id}/articles', {
     responses: {
       '200': {
         description: 'Array of Users has many Article',
@@ -35,4 +44,5 @@ export class UsersArticleController {
   ): Promise<Article[]> {
     return this.usersRepository.articles(id).find(filter);
   }
+
 }

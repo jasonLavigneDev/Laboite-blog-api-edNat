@@ -68,7 +68,11 @@ export class ArticlesController {
   async findById(
     @param.path.string('id') id: string
   ): Promise<(Article) | null> {
-    return this.articleRepository.findOne({ where : { slug: id }});
+    return this.articleRepository.findOne({ where : { slug: id }, include: [
+      {
+        relation: 'user',
+      }
+    ]});
     // return this.articleRepository.findById(id, filter);
   }
 
