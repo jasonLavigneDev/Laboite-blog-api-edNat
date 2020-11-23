@@ -40,6 +40,11 @@ export class Article extends Entity {
   content: string;
 
   @property({
+    type: 'string',
+  })
+  structure: string;
+
+  @property({
     type: 'boolean',
     default: false,
   })
