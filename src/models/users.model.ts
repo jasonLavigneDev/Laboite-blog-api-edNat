@@ -34,6 +34,11 @@ export class Users extends Entity {
   lastName: string;
 
   @property({
+    type: 'string',
+  })
+  avatar?: string;
+
+  @property({
     type: 'number',
     default: 0,
   })
