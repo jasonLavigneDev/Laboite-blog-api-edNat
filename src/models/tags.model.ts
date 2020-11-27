@@ -1,6 +1,13 @@
 import {Entity, model, property} from '@loopback/repository';
 
-@model()
+
+@model({
+  settings: {
+    strict: true,
+    idInjection: false,
+    mongodb: {collection: 'tags'}, // custom names
+  },
+})
 export class Tags extends Entity {
   @property({
     type: 'string',

@@ -37,23 +37,4 @@ export class TagsControllerController {
   ): Promise<Tags[]> {
     return this.tagsRepository.find(filter);
   }
-
-  @get('/tags/{id}', {
-    responses: {
-      '200': {
-        description: 'Tags model instance',
-        content: {
-          'application/json': {
-            schema: getModelSchemaRef(Tags, {includeRelations: true}),
-          },
-        },
-      },
-    },
-  })
-  async findById(
-    @param.path.string('id') id: string,
-    @param.filter(Tags, {exclude: 'where'}) filter?: FilterExcludingWhere<Tags>
-  ): Promise<Tags> {
-    return this.tagsRepository.findById(id, filter);
-  }
 }
