@@ -93,6 +93,6 @@ export class ArticlesController {
     })
     article: Article,
   ): Promise<void> {
-    await this.articleRepository.updateById(id, article);
+    await this.articleRepository.updateById(id, { visits: article.visits } );
   }
 }
