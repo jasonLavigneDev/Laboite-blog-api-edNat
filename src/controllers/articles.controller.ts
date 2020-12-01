@@ -7,7 +7,7 @@ import {
 } from '@loopback/repository';
 import {
   get,
-  getModelSchemaRef, param
+  getModelSchemaRef, param, requestBody, patch
 } from '@loopback/rest';
 import {Article} from '../models';
 import {ArticleRepository} from '../repositories';
@@ -73,27 +73,26 @@ export class ArticlesController {
         relation: 'user',
       }
     ]});
-    // return this.articleRepository.findById(id, filter);
   }
 
-  // @patch('/articles/{id}', {
-  //   responses: {
-  //     '204': {
-  //       description: 'Article PATCH success',
-  //     },
-  //   },
-  // })
-  // async updateById(
-  //   @param.path.string('id') id: string,
-  //   @requestBody({
-  //     content: {
-  //       'application/json': {
-  //         schema: getModelSchemaRef(Article, {partial: true}),
-  //       },
-  //     },
-  //   })
-  //   article: Article,
-  // ): Promise<void> {
-  //   await this.articleRepository.updateById(id, article);
-  // }
+  @patch('/articles/{id}/read', {
+    responses: {
+      '204': {
+        description: 'Article PATCH success',
+      },
+    },
+  })
+  async updateById(
+    @param.path.string('id') id: string,
+    @requestBody({
+      content: {
+        'application/json': {
+          schema: getModelSchemaRef(Article, {partial: true}),
+        },
+      },
+    })
+    article: Article,
+  ): Promise<void> {
+    await this.articleRepository.updateById(id, article);
+  }
 }
