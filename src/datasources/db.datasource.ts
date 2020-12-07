@@ -1,11 +1,10 @@
 import {inject, lifeCycleObserver, LifeCycleObserver} from '@loopback/core';
 import {juggler} from '@loopback/repository';
-import settings from '../settings.json';
 
 const config = {
   name: 'db',
   connector: 'mongodb',
-  url: settings.mongodb,
+  url: process.env.MONGO_URL,
   host: '',
   port: 0,
   user: '',
