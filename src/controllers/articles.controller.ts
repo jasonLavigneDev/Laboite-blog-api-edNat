@@ -83,16 +83,13 @@ export class ArticlesController {
     },
   })
   async updateById(
-    @param.path.string('id') id: string,
-    @requestBody({
-      content: {
-        'application/json': {
-          schema: getModelSchemaRef(Article, {partial: true}),
-        },
-      },
-    })
-    article: Article,
+    @param.path.string('id') id: string
   ): Promise<void> {
-    await this.articleRepository.updateById(id, { visits: article.visits } );
+    const articles: Article[] = await this.articleRepository.find({ where : { _id: id }, fields: {visits: true} })
+   const concernedArticle = articles[0];
+    if(concernedArticle) {
+      const { visits = 0 } = concernedArticle;
+      await this.articleRepository.updateById(id, { visits: visits + 1 } );
+    }
   }
 }
