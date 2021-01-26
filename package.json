@@ -1,7 +1,7 @@
 {
   "name": "laboite-blog-backend",
-  "version": "0.0.1",
-  "description": " API backend for blog of laboite",
+  "version": "1.0.0",
+  "description": " API backend for laboite blog service",
   "keywords": [
     "loopback-application",
     "loopback"
