@@ -1,5 +1,5 @@
 # Check out https://hub.docker.com/_/node to select a new base image
-FROM hub.eole.education/proxyhub/library/node:10-slim
+FROM hub.eole.education/proxyhub/library/node:lts-alpine3.12
 
 # Set to a non-root built-in user `node`
 USER node
