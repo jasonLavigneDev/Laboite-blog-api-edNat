@@ -52,6 +52,12 @@ export class Article extends Entity {
   markdown?: boolean;
 
   @property({
+    type: 'boolean',
+    default: false,
+  })
+  draft?: boolean;
+
+  @property({
     type: 'date',
     required: true,
   })
