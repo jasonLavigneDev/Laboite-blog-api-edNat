@@ -1,0 +1,38 @@
+image: hub.eole.education/proxyhub/geoffreybooth/node:14-alpine
+
+stages:
+  - deps
+  - lint
+  - test
+
+cache:
+  paths:
+    - node_modules/
+
+variables:
+  METEOR_ALLOW_SUPERUSER: 'true'
+
+Deps:
+  stage: deps
+  script:
+    - npm ci
+  artifacts:
+    paths:
+      - node_modules/
+  rules:
+    - if: '$CI_COMMIT_MESSAGE  !~ /^(\[Draft\]|\(Draft\)|Draft:|\[WIP\]|WIP:)/'
+
+Lint:
+  stage: lint
+  script:
+    - npm install --only=dev
+    - npm run lint
+  rules:
+    - if: '$CI_COMMIT_MESSAGE  !~ /^(\[Draft\]|\(Draft\)|Draft:|\[WIP\]|WIP:)/'
+
+Test:
+  stage: test
+  script:
+    - npm test
+  rules:
+    - if: '$CI_COMMIT_MESSAGE  !~ /^(\[Draft\]|\(Draft\)|Draft:|\[WIP\]|WIP:)/'
