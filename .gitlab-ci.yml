@@ -1,4 +1,4 @@
-image: FROM hub.eole.education/proxyhub/library/node:lts-alpine3.12
+image: FROM hub.eole.education/proxyhub/library/node:14.16.1-alpine
 stages:
   - deps
   - lint
