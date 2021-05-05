@@ -20,6 +20,11 @@ export class Group extends Entity {
   name: string;
 
   @property({
+    type: 'boolean',
+  })
+  articles: boolean;
+
+  @property({
     type: 'string',
     id: true,
     generated: true,
