@@ -8,9 +8,6 @@
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "engines": {
-    "node": ">=14.15"
-  },
   "scripts": {
     "build": "lb-tsc",
     "build:watch": "lb-tsc --watch",
