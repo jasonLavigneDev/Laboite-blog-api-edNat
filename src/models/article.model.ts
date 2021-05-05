@@ -1,4 +1,5 @@
 import {Entity, model, property, belongsTo} from '@loopback/repository';
+import { GroupItem } from './group-item.model';
 import {Users} from './users.model';
 
 @model({
@@ -80,6 +81,9 @@ export class Article extends Entity {
     itemType: 'string',
   })
   tags?: string[];
+
+  @property.array(GroupItem)
+  groups?: GroupItem[];
 
   @belongsTo(() => Users)
   userId: string;
