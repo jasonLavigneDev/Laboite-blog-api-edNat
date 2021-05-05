@@ -5,7 +5,7 @@ import {inject} from '@loopback/core';
 
 export class GroupRepository extends DefaultCrudRepository<
   Group,
-  typeof Group.prototype.slug,
+  typeof Group.prototype._id,
   GroupRelations
 > {
 

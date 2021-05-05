@@ -10,8 +10,10 @@ import { Entity, model, property } from '@loopback/repository';
 export class Group extends Entity {
   @property({
     type: 'string',
+    id: true,
+    generated: true,
   })
-  _id?: string;
+  _id: string;
 
   @property({
     type: 'string',
@@ -32,8 +34,6 @@ export class Group extends Entity {
 
   @property({
     type: 'string',
-    id: true,
-    generated: true,
   })
   slug: string;
 
