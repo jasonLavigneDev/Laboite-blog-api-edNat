@@ -20,6 +20,12 @@ export class Group extends Entity {
   name: string;
 
   @property({
+    type: 'string',
+    required: true,
+  })
+  avatar: string;
+
+  @property({
     type: 'boolean',
   })
   articles: boolean;
