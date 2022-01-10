@@ -3,3 +3,5 @@ dist/
 coverage/
 .eslintrc.js
 commitlint.config.js
+release.config.js
+release-rules.js
