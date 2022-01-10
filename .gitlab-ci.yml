@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
+---
+include:
+  - project: EOLE/infra/ci-tools
+    ref: stable
+    file: /templates/Rules.yaml
+  - project: EOLE/infra/ci-tools
+    ref: stable
+    file: /templates/Runners/apps.education-docker.yaml
+  - project: EOLE/infra/ci-tools
+    ref: stable
+    file: /templates/Lint/Commitlint.yaml
+
+variables:
+  # `ci-tools` default branch is `stable`
+  STABLE_BRANCH: master
+
+stages:
+  - initial-checks
+
+
+###############################################################################
+# `initial-checks` stage: `commitlint`
+###############################################################################
+commitlint:
+  stage: initial-checks
