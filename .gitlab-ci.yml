@@ -65,18 +65,21 @@ yarn:build:
 prettier:
   stage: test
   extends: .nodejs
+  allow_failure: true
   script:
     - yarn run prettier:check
 
 eslint:
   stage: test
   extends: .nodejs
+  allow_failure: true
   script:
     - yarn run eslint
 
 js-test:
   stage: test
   extends: .nodejs
+  allow_failure: true
   script:
     - yarn run test
 
