@@ -21,14 +21,64 @@ variables:
 
 stages:
   - initial-checks
+  - test
   - release
+
+# Common setup for all meteor based jobs
+.nodejs:
+  extends: .not-on-stable
+  image: hub.eole.education/proxyhub/library/node:14.16.1-alpine
+  cache:
+    key:
+      files:
+        # Generate new cache when one of the file changes
+        - package.json
+        - package-lock.json
+    paths:
+      - dist/
+      - node_modules/
+    # Only use the cache created by `yarn:install` and `yarn:build` jobs
+    policy: pull
 
 
 ###############################################################################
-# `initial-checks` stage: `commitlint`
+# `initial-checks` stage: `commitlint`, `yarn:build`
 ###############################################################################
 commitlint:
   stage: initial-checks
+
+# Verify that the dependencies can be installed and cache dependencies
+yarn:build:
+  stage: initial-checks
+  extends: .nodejs
+  cache:
+    policy: pull-push
+  script:
+    - yarn install
+    - yarn run clean
+    - yarn run build
+
+
+###############################################################################
+# `test` stage: `prettier`, `eslint`, `js-test`
+###############################################################################
+prettier:
+  stage: test
+  extends: .nodejs
+  script:
+    - yarn run prettier:check
+
+eslint:
+  stage: test
+  extends: .nodejs
+  script:
+    - yarn run eslint
+
+js-test:
+  stage: test
+  extends: .nodejs
+  script:
+    - yarn run test
 
 
 ###############################################################################
