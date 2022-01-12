@@ -1,2 +1,5 @@
 dist
 *.json
+commitlint.config.js
+release.config.js
+release-rules.js
