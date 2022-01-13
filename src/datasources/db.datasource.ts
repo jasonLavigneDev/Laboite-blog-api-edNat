@@ -4,12 +4,11 @@ import {juggler} from '@loopback/repository';
 const config = {
   name: 'db',
   connector: 'mongodb',
-  url: process.env.MONGO_URL,
-  host: '',
-  port: 0,
-  user: '',
-  password: '',
-  database: '',
+  host: process.env.MONGO_HOST,
+  port: process.env.MONGO_PORT,
+  user: encodeURIComponent(process.env.MONGO_USER || ''),
+  password: encodeURIComponent(process.env.MONGO_PASSWORD || ''),
+  database: process.env.MONGO_DATABASE,
   useNewUrlParser: true
 };
 
