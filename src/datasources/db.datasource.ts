@@ -2,13 +2,14 @@ import {inject, lifeCycleObserver, LifeCycleObserver} from '@loopback/core';
 import {juggler} from '@loopback/repository';
 
 const config = {
+  url:`mongodb://${encodeURIComponent(process.env.MONGO_USER || "")}:${encodeURIComponent(process.env.MONGO_PASSWORD || "")}@${process.env.MONGO_HOST}:${process.env.MONGO_PORT}/${process.env.MONGO_DATABASE}`,
   name: 'db',
   connector: 'mongodb',
-  host: process.env.MONGO_HOST,
-  port: process.env.MONGO_PORT,
-  user: encodeURIComponent(process.env.MONGO_USER || ''),
-  password: encodeURIComponent(process.env.MONGO_PASSWORD || ''),
-  database: process.env.MONGO_DATABASE,
+  host: '',
+  port: 0,
+  user: '',
+  password: '',
+  database: '',
   useNewUrlParser: true
 };
 
