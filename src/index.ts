@@ -36,4 +36,5 @@ if (require.main === module) {
     console.error('Cannot start the application.', err);
     process.exit(1);
   });
+  console.log(` - Started API server on port ${config.rest.port}`)
 }
