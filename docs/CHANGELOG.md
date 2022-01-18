@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.3](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/compare/release/1.1.2...release/1.1.3) (2022-01-18)
+
+
+### Bug Fixes
+
+* **auth:** change authentication method for mongodb ([2e3a71e](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/2e3a71ef5012ed49a347dc9b7e63e4e91d80f3cd))
+* **config:** add checks and logs for mongo configuration ([e4d6757](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/e4d6757db32977c5abe48aa30a6e648cb5e92d24))
+
 ## [1.1.2](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/compare/release/1.1.1...release/1.1.2) (2022-01-13)
 
 
