@@ -1,3 +1,4 @@
+import {version} from '../package.json';
 import {ApplicationConfig, LaboiteBlogBackendApplication} from './application';
 
 export * from './application';
@@ -8,8 +9,8 @@ export async function main(options: ApplicationConfig = {}) {
   await app.start();
 
   const url = app.restServer.url;
-  console.log(`Server is running at ${url}`);
-  console.log(`Try ${url}/ping`);
+  console.log(` - Server is running at ${url} (Version ${version})`);
+  console.log(` - Try ${url}/ping`);
 
   return app;
 }
@@ -36,5 +37,4 @@ if (require.main === module) {
     console.error('Cannot start the application.', err);
     process.exit(1);
   });
-  console.log(` - Started API server on port ${config.rest.port}`)
 }
