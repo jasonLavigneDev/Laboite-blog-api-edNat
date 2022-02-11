@@ -6,8 +6,8 @@
     "loopback-application",
     "loopback"
   ],
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "build": "lb-tsc",
     "build:watch": "lb-tsc --watch",
@@ -23,7 +23,7 @@
     "posttest": "yarn run lint",
     "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && yarn run posttest",
     "docker:build": "docker build -t laboite-blog-backend .",
-    "docker:run": "docker run -p 3000:3000 -d laboite-blog-backend",
+    "docker:run": "docker run -p 3000:3000 --name api --env-file .env -d laboite-blog-backend && docker logs -f api",
     "premigrate": "npm run build",
     "migrate": "node ./dist/migrate",
     "preopenapi-spec": "npm run build",
