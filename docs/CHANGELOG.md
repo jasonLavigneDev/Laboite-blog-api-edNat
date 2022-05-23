@@ -1,5 +1,18 @@
 # Changelog
 
+# [1.2.0](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/compare/release/1.1.3...release/1.2.0) (2022-05-23)
+
+
+### Bug Fixes
+
+* **debug:** allow acces to version in package.json ([78a5004](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/78a50040d519b97271af8d67eb2be4c15266d985))
+* **mongo_auth:** add authSource parameter for mongo connection ([c171361](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/c1713614b4f6782e175fef8f1993a12612228bfc))
+
+
+### Features
+
+* **structure:** add structure model ([66bc174](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/66bc174f07da4af9167f57ae2abd002f68fa7225))
+
 ## [1.1.3](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/compare/release/1.1.2...release/1.1.3) (2022-01-18)
 
 
