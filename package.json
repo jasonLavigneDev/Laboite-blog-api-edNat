@@ -1,6 +1,6 @@
 {
   "name": "laboite-blog-backend",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "license": "EUPL-1.2",
   "description": " API backend for laboite blog service",
   "keywords": [
