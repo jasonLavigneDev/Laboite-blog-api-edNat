@@ -1,5 +1,5 @@
-import {Entity, model, property, belongsTo} from '@loopback/repository';
-import { GroupItem } from './group-item.model';
+import {belongsTo, Entity, model, property} from '@loopback/repository';
+import {GroupItem} from './group-item.model';
 import {Users} from './users.model';
 
 @model({
@@ -13,7 +13,7 @@ export class Article extends Entity {
   @property({
     type: 'string',
     id: true,
-    generated: true
+    generated: true,
   })
   _id: string;
 
@@ -81,6 +81,12 @@ export class Article extends Entity {
     itemType: 'string',
   })
   tags?: string[];
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  licence?: string;
 
   @property.array(GroupItem)
   groups?: GroupItem[];
