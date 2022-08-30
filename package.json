@@ -3,6 +3,7 @@
   "version": "1.2.1",
   "license": "EUPL-1.2",
   "description": " API backend for laboite blog service",
+  "author": "EOLE/PCLL <team@eole.education> - DINUM",
   "keywords": [
     "loopback-application",
     "loopback"
@@ -36,7 +37,6 @@
   "repository": {
     "type": "git"
   },
-  "author": "Francois AUBEUT <contact@mexar.fr>",
   "files": [
     "README.md",
     "dist",
