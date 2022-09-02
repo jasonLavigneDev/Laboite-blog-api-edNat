@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/compare/release/1.2.0...release/1.2.1) (2022-07-04)
+
+
+### Bug Fixes
+
+* **audit:** update npm libraries, add LICENSE ([e47649c](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/e47649c8f9afc23158b7789654b01250209a7552))
+
 # [1.2.0](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/compare/release/1.1.3...release/1.2.0) (2022-05-23)
 
 
