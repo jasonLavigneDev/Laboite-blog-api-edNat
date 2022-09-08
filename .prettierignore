@@ -1,4 +1,3 @@
 dist
 *.json
-release.config.js
-release-rules.js
+.releaserc.js
