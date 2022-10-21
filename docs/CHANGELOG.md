@@ -1,5 +1,33 @@
 # Changelog
 
+## [1.3.0](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/compare/release/1.2.1...release/1.3.0) (2022-09-20)
+
+
+### Features
+
+* **article:** add licence to articles ([9d41650](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/9d4165070f5b1460d4b06e966eba33e7bf7dc148))
+
+
+### Bug Fixes
+
+* **install:** use yarn instead of npm for install ([94a4f45](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/94a4f4522d8ca40cccab04bebb3d51b9d14ed077))
+* **librairies:** update loopback/rest librairy ([9431a5f](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/9431a5f84dcf4e55f571df6f698bc6d429f3bdc0))
+
+
+### Documentation
+
+* **readme:** translate readme in french ([195c7d7](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/195c7d7621d7b8203de6eeacce92d11285b4e5ee))
+
+
+### Continuous Integration
+
+* **build-docker:** run for `testing` prerelease ([ae7e792](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/ae7e79237aac0758349749573fe785c7d5a7a8c2))
+* **commitlint:** use new standard job `.git:commitlint` ([df0e5a0](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/df0e5a0229c707cc4e1cd9afe5e86085bda8380f))
+* **merge-to-dev:** use new standard jobs `.git:merge-to` ([4d45ad0](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/4d45ad02240627bbc5b49b4f69681d6802b27fe0))
+* **meteor:** test before generating a new release ([df161bc](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/df161bc5ec43d00071bc9fbb61648597b68c5818))
+* **semantic-release:** create `testing` prerelease ([9ca3278](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/9ca327858adc2752d78f8a8ea9e6158a72e0590e))
+* **tag docker:** tag `testing` prerelease image ([a6977be](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/a6977be39cee5b3f892d3fbadf35287c131ef570))
+
 ## [1.2.1](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/compare/release/1.2.0...release/1.2.1) (2022-07-04)
 
 
