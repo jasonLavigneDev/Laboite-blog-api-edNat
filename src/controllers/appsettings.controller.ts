@@ -14,7 +14,7 @@ import {
   import {AppSettings} from '../models';
   import {AppSettingsRepository} from '../repositories';
   
-  export class StructureController {
+  export class AppSettingsController {
     constructor(
       @repository(AppSettingsRepository)
       public appSettingsRepository : AppSettingsRepository,
@@ -36,11 +36,9 @@ import {
       },
     })
     async find(
-      @param.filter(AppSettings) filter?: Filter<AppSettings>,
-    ): Promise<AppSettings[]> {
-      return this.appSettingsRepository.find(filter);
+        @param.filter(AppSettings, {exclude: 'where'}) filter?: FilterExcludingWhere<AppSettings>
+    ): Promise<AppSettings | null> {
+      return this.appSettingsRepository.findOne({ where : { _id: 'settings' } });
     }
-  
-
   }
   

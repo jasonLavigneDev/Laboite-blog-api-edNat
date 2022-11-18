@@ -1,6 +1,7 @@
 import {belongsTo, Entity, model, property} from '@loopback/repository';
 
-export class SettingsType extends Entity {
+@model()
+export class SettingsType {
     @property({
         type: 'boolean',
         required: true,

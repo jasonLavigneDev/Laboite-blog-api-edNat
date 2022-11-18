@@ -13,29 +13,31 @@ import {Users} from './users.model';
 export class AppSettings extends Entity {
     @property({
         type: 'string',
+        required: true,
+        id: true,
     })
     _id: string;
 
   @property({
-    type: Entity,
+    type: 'object',
     required: true,
   })
   legal: SettingsType;
 
   @property({
-    type: Entity,
+    type: 'object',
     required: true,
   })
   accessibility: SettingsType;
     
   @property({
-    type: Entity,
+    type: 'object',
     required: true,
   })
   gcu: SettingsType;
     
   @property({
-    type: Entity,
+    type: 'object',
     required: true,
   })
   personalData: SettingsType;

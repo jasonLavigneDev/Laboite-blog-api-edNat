@@ -5,3 +5,4 @@ export * from './users-article.controller';
 export * from './tags.controller';
 export * from './group.controller';
 export * from './structure.controller';
+export * from './appsettings.controller';
