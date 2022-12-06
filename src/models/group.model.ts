@@ -1,10 +1,10 @@
-import { Entity, model, property } from '@loopback/repository';
+import {Entity, model, property} from '@loopback/repository';
 
 @model({
   settings: {
     strict: true,
     idInjection: false,
-    mongodb: { collection: 'groups' }, // custom names
+    mongodb: {collection: 'groups'}, // custom names
   },
 })
 export class Group extends Entity {
@@ -37,6 +37,10 @@ export class Group extends Entity {
   })
   slug: string;
 
+  @property({
+    type: 'number',
+  })
+  type: number;
 
   constructor(data?: Partial<Group>) {
     super(data);
