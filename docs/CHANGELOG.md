@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.4.0](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/compare/release/1.3.0...release/1.4.0) (2022-11-22)
+
+
+### Features
+
+* **appsettings:** add appsettings to API ([aca25ca](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/aca25cab8c2176166cd6df89ef567817762b3d5b))
+
+
+### Bug Fixes
+
+* **appsettings:** fix model and controller ([1f6783e](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/1f6783e536782aaad7be621bf7d986509bd2f382))
+* **ci:** convert .gitlab-ci.yml back to unix format ([ef8acd1](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/ef8acd1e62a971aa843e2861b06eefb9e113408b))
+* **ci:** delete prettier formating ([3a849a1](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/3a849a1ee3dc5e1d61588528cb500e9dd75971bc))
+* **package:** remove old call of script ([cf74425](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/cf74425bd000eeb8a9606b2c2187f8a3e0ff1e9c))
+* **test:** remove old test /ping ([3a38205](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/3a38205deb962dec69d802f954190ed2f8dd4f27))
+
+
+### Build System
+
+* **alpine:** update node alpine version to 16.17.0 ([c0ad2c6](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/c0ad2c6f6ebdf9002825c679203dc29221e1d777))
+
 ## [1.3.0](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/compare/release/1.2.1...release/1.3.0) (2022-09-20)
 
 

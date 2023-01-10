@@ -1,5 +1,4 @@
-import {model, property, Entity, belongsTo} from '@loopback/repository';
-import {Group} from './group.model';
+import {Entity, model, property} from '@loopback/repository';
 
 @model()
 export class GroupItem extends Entity {
@@ -12,6 +11,11 @@ export class GroupItem extends Entity {
     type: 'string',
   })
   name: string;
+
+  @property({
+    type: 'number',
+  })
+  type: number;
 
   constructor(data?: Partial<GroupItem>) {
     super(data);
