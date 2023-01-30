@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/compare/release/1.4.0...release/1.5.0) (2023-01-30)
+
+
+### Features
+
+* **groups:** add group type to group models ([bfcfe17](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/bfcfe171864bf7306e488d53b89db3edebf556f0))
+
 ## [1.4.0](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/compare/release/1.3.0...release/1.4.0) (2022-11-22)
 
 
