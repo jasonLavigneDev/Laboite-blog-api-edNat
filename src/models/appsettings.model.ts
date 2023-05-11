@@ -1,7 +1,5 @@
-import {belongsTo, Entity, model, property} from '@loopback/repository';
-import {GroupItem} from './group-item.model';
+import {Entity, model, property} from '@loopback/repository';
 import {SettingsType} from './settingsType.model';
-import {Users} from './users.model';
 
 @model({
   settings: {
@@ -11,12 +9,12 @@ import {Users} from './users.model';
   },
 })
 export class AppSettings extends Entity {
-    @property({
-        type: 'string',
-        required: true,
-        id: true,
-    })
-    _id: string;
+  @property({
+    type: 'string',
+    required: true,
+    id: true,
+  })
+  _id: string;
 
   @property({
     type: 'object',
@@ -29,19 +27,30 @@ export class AppSettings extends Entity {
     required: true,
   })
   accessibility: SettingsType;
-    
+
   @property({
     type: 'object',
     required: true,
   })
   gcu: SettingsType;
-    
+
   @property({
     type: 'object',
     required: true,
   })
   personalData: SettingsType;
-    
+
+  @property({
+    type: 'object',
+    required: true,
+  })
+  maintenance: boolean;
+
+  @property({
+    type: 'object',
+    required: true,
+  })
+  textMaintenance: string;
 
   constructor(data?: Partial<AppSettings>) {
     super(data);
@@ -49,7 +58,7 @@ export class AppSettings extends Entity {
 }
 
 export interface AppSettingsRelations {
-    // describe navigational properties here
-  }
-  
+  // describe navigational properties here
+}
+
 export type AppSettingsWithRelations = AppSettings & AppSettingsRelations;
