@@ -62,5 +62,8 @@
     "eslint": "^7.10.0",
     "source-map-support": "^0.5.21",
     "typescript": "^4.4.4"
+  },
+  "resolutions": {
+    "semver": "^7.5.2"
   }
 }
