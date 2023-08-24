@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/compare/release/1.5.0...release/1.6.0) (2023-08-24)
+
+
+### Features
+
+* **maintenance:** add maintenance fields on appsettings route ([95aa586](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/95aa586d326e0261e5c0c2a30604ba3d23d78d7a))
+
 ## [1.5.0](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/compare/release/1.4.0...release/1.5.0) (2023-01-30)
 
 
