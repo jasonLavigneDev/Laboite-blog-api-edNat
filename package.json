@@ -1,6 +1,6 @@
 {
   "name": "laboite-blog-backend",
-  "version": "1.6.0",
+  "version": "1.6.1-testing.1",
   "license": "EUPL-1.2",
   "description": " API backend for laboite blog service",
   "author": "EOLE/PCLL <team@eole.education> - DINUM",
@@ -51,6 +51,7 @@
     "@loopback/service-proxy": "3.2.4",
     "ejs": "~3.1.7",
     "loopback-connector-mongodb": "^5.2.3",
+    "semver": "^7.5.2",
     "tslib": "^2.0.0"
   },
   "devDependencies": {
