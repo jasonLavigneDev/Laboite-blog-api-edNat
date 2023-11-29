@@ -1645,6 +1645,13 @@ escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==
 
+eslint-config-loopback@^13.1.0:
+  version "13.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-loopback/-/eslint-config-loopback-13.1.0.tgz#098397a9744dc3f829cfc819da3eb45cec322889"
+  integrity sha512-Dg4IylCM5ysK9LsfzNZYLpnBjkgsBnjLMcprAMW8r7EMSody4GwOzeMixlkboNxeXZAG0z7aezh3fIJcOWFEVg==
+  dependencies:
+    eslint-plugin-mocha "^5.2.0"
+
 eslint-config-prettier@^8.3.0:
   version "8.10.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.10.0.tgz#3a06a662130807e2502fc3ff8b4143d8a0658e11"
@@ -1656,6 +1663,13 @@ eslint-plugin-eslint-plugin@^3.0.3, eslint-plugin-eslint-plugin@^3.6.1:
   integrity sha512-SOE0aoS2+lvtcEbJmy98gEKaxcpkQdxDtqvqE0VQSiGEFme8yTNjpLAjMqPDmmj8KGTwIFd+cYnVykz+9HAIiw==
   dependencies:
     eslint-utils "^2.1.0"
+
+eslint-plugin-mocha@^5.2.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-mocha/-/eslint-plugin-mocha-5.3.0.tgz#cf3eb18ae0e44e433aef7159637095a7cb19b15b"
+  integrity sha512-3uwlJVLijjEmBeNyH60nzqgA1gacUWLUmcKV8PIGNvj1kwP/CTgAWQHn2ayyJVwziX+KETkr9opNwT1qD/RZ5A==
+  dependencies:
+    ramda "^0.26.1"
 
 eslint-plugin-mocha@^9.0.0:
   version "9.0.0"
@@ -3324,6 +3338,11 @@ queue-microtask@^1.2.2:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
+
+ramda@^0.26.1:
+  version "0.26.1"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.26.1.tgz#8d41351eb8111c55353617fc3bbffad8e4d35d06"
+  integrity sha512-hLWjpy7EnsDBb0p+Z3B7rPi3GDeRG5ZtiI33kJhTt+ORCd38AbAIjB/9zRIUoeTbE/AVX5ZkU7m6bznsvrf8eQ==
 
 ramda@^0.27.1:
   version "0.27.2"

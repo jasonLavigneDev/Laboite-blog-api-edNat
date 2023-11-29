@@ -3,8 +3,8 @@ import {LaboiteBlogBackendApplication} from '../..';
 import {setupApplication} from './test-helper';
 
 describe('PingController', () => {
-  let app: LaboiteBlogBackendApplication;
-  let client: Client;
+  let app: LaboiteBlogBackendApplication,
+   client: Client;
 
   before('setupApplication', async () => {
     ({app, client} = await setupApplication());
