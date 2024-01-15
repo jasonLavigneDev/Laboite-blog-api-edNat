@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.6.1](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/compare/release/1.6.0...release/1.6.1) (2023-11-07)
+
+
+### Bug Fixes
+
+* **audit:** update vulnerable libraries ([1fa6882](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/1fa68822429ffaf0c89b86d1d2b2ad844ce53c13))
+
 ## [1.6.0](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/compare/release/1.5.0...release/1.6.0) (2023-08-24)
 
 
