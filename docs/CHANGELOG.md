@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.6.2](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/compare/release/1.6.1...release/1.6.2) (2024-01-30)
+
+
+### Bug Fixes
+
+* **libs:** update yarn librairies ([2d1be8f](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/2d1be8f76eb34e2573d5acc2f7eaac500c82a0d1))
+* **node:** update node alpine version ([62fdb6e](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/commit/62fdb6e0046d7b0715c4b49ff8338e36bec95685))
+
 ### [1.6.1](https://gitlab.mim-libre.fr/alphabet/laboite-blog-api/compare/release/1.6.0...release/1.6.1) (2023-11-07)
 
 
